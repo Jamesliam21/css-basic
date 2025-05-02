@@ -1,0 +1,431 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+.header{
+    display: flex;
+    justify-content: center;
+    height: 90px;
+    width: 100%;
+    background-color: rgb(243, 181, 100);
+    align-items: center;
+    justify-content: space-around;
+    position: fixed;
+    top:0;
+    width: 100%;
+    z-index: 1000;
+}
+.logo{
+    font-size: 23px;
+}
+#toggler-btn{
+    width: 35px;
+    height: 35px;
+    border: none;
+    border-radius: 5px;
+    display: none;
+    background:rgb(250, 146, 11);
+    margin: 30px;
+   
+}
+.menu a{
+    color: black;
+    margin: 0 20px;
+    text-decoration: none;
+}
+.menulink{
+    font-size: 18px;
+}
+.mainbody{
+    padding-top: 100px;
+    /*height: 100vh;*/
+    background: rgb(253, 173, 69);
+}
+.maincontainer{
+    display: flex;
+    max-width: 900px;
+    margin: auto;
+    align-items: center;
+    margin-top: 100px;
+    border: 5px solid white;
+    background: rgb(238, 185, 115);
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+}
+.main .maincontainer .content{
+    flex-basis: 60%;
+    text-align: center;
+    line-height: 25px;
+    padding: 0 3px;
+}
+.main .maincontainer .content h4,
+.main .maincontainer .content h1,
+.main .maincontainer .content p{
+    margin-bottom: 20px;
+}
+.main .maincontainer .mainimg{
+    flex-basis: 40%;
+}
+.main .maincontainer .mainimg img{
+    width: 100%;
+    border-radius: 20px;
+    vertical-align: middle;
+}
+.socialicon{
+    font-size: 25px;
+}
+.socialicon a{
+    margin: 0 10px;
+}
+.socialicon a:first-child{
+    color: blue;
+}
+.socialicon a:nth-child(2){
+    color: red;
+}
+.socialicon a:last-child {
+        color: black;
+}
+.section-title{
+    text-align: center;
+    
+    margin-top: 100px;
+}
+.underline{
+    width: 50px;
+    height: 2px;
+    background-color: black;
+    border: none;
+    border-radius: 2px;
+    margin: 0 auto 0;
+    margin-bottom: 50px;
+}
+.aboutme .aboutcontainer{
+    max-width: 900px;
+    margin: auto;
+    display: flex;
+    flex-basis: 50%;
+    align-items: center;
+    padding: 20px 0;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+}
+.aboutme .aboutcontainer .aboutimg{
+    flex-basis: 50%;
+    padding: 15px 25px;
+}
+.aboutme .aboutcontainer .aboutimg img{
+    width: 100%;
+    border-radius: 50%;
+    margin: auto;
+    display: block;
+    box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+.aboutme .aboutcontainer .aboutcontent {
+    width: 400px;
+    height: 300px;
+    text-align: center;
+    align-items: center;
+    padding: 20px;
+    
+}
+.aboutme .aboutcontainer .aboutcontent h3{
+    padding-top: 50px;
+}
+.aboutcontent .underline{
+    width:50px;
+    height: 2px;
+    background-color: black;
+    border: none;
+    border-radius: 2px;
+    margin: 0 auto 0;
+    margin-bottom: 20px;
+}
+.underline2{
+    width: 40px;
+    height: 2px;
+    background-color: black;
+    border: none;
+    border-radius: 2px;
+    margin: 0 auto 0;
+    margin-bottom: 50px;
+}
+.skillcontainer{
+    max-width: 900px;
+    margin: auto;
+    display: flex;
+    flex-basis: 50%;
+    align-items: center;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+}
+.skillimg{
+    width: 50%;
+    padding-right: 25px;
+}
+.skill .skillimg img{
+    width: 100%;
+    margin: auto;
+    display: block;
+    border-radius: 10px;
+}
+
+.skillcontainer{
+    padding: 10px;
+}
+.skillcontent{
+    flex-basis: 50%;
+    padding: 15px;
+}
+.skillcontent ul{
+    list-style: none;
+}
+.skillcontent ul li{
+    
+    display: inline-block;
+    background-color: rgb(255, 145, 0);
+    padding: 5px 30px;
+    margin: 5px 10px;
+    border-radius: 5px;
+}
+.skillcontent .title1{
+    margin-left: 10px;
+}
+.skillcontent .title2,
+.skillcontent .title3{
+    margin-top: 20px;
+    margin-left: 10px;
+}
+.underline3{
+    width: 70px;
+    height: 2px;
+    background-color: black;
+    border: none;
+    border-radius: 2px;
+    margin: 0 auto 0;
+    margin-bottom: 50px;
+}
+.myworkcontainer .card:hover{
+    background-color: rgb(252, 144, 4);
+    transform: scale(1.1);
+}
+.myworkcontainer{
+    max-width: 900px;
+    margin: auto;
+    display: flex;
+    flex-basis: 50%;
+    align-items: center;
+    justify-content: space-between;
+}
+.myworkcontainer .card{
+    flex-basis: 30%;
+    height: 250px;
+    background: rgb(255, 168, 54);
+    padding: 10px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+    cursor: pointer;
+    transition: transform 1s, background-color 1s;
+}
+.myworkcontainer .card i{
+    font-size: 30px;
+    padding: 10px;
+}
+.myworkcontainer .card h2{
+    padding-bottom: 15px;
+}
+.underline4{
+    width: 90px;
+    height: 2px;
+    background-color: black;
+    border: none;
+    border-radius: 2px;
+    margin: 0 auto 0;
+    margin-bottom: 50px;
+}
+.contactmecontainer{
+    max-width: 900px;
+    display: flex;
+    flex-basis: 50%;
+    margin: auto;
+    align-items: center;
+    padding: 30px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+    border-radius: 20px;
+}
+.contactmecontainer .info{
+    flex-basis: 50%;
+    display: flex;
+}
+.contactmecontainer ul{
+    list-style: none;
+    line-height: 40px;
+    font-weight: bold;
+}
+
+.info i{
+    padding: 0 10px;
+}
+
+.contactmecontainer .form{
+    flex-basis: 60%;  
+}
+.form .formgp{
+   display: flex;
+   justify-content: space-between
+}
+.form .formgp input{
+    flex-basis: 49%;
+    margin-bottom: 20px;
+    height: 30px;
+    border-radius: 5px;
+    border: none;
+    padding: 0 10px;
+    background-color: rgb(252, 144, 4);
+}
+.form .textarea{
+    width: 100%;
+    height: 100px;
+    border-radius: 5px;
+    border: none;
+    padding: 5px 10px;
+    background-color:rgb(252, 144, 4) ;
+    
+}
+.form button{
+    padding: 7px 20px;
+    border: none;
+    border-radius: 5px;
+    float: right;
+    margin-top: 5px;
+    background-color:rgb(252, 144, 4);
+}
+.footer{
+    margin-top: 100px;
+    background-color: rgb(252, 144, 4);
+}
+.footercontainer{
+    max-width: 900px;
+    margin: auto;
+    display: flex;
+    flex-basis: 50%;
+    text-align: center;
+    justify-content: space-between;
+    padding: 50px 0;
+}
+.footercontainer .colum{
+    flex-basis: 32%;
+    line-height: 35px;
+    
+}
+.footercontainer ul{
+    list-style: none;
+}
+.footerlink ul a {
+    color: black;
+    text-decoration: none;
+}
+.footercontainer .colum h2{
+    margin-bottom: 20px;
+}
+.socialiconfooter{
+    font-size: 25px;
+}
+.socialiconfooter a{
+    margin: 0 10px;
+}
+.socialiconfooter a:first-child{
+    color: blue;
+}
+.socialiconfooter a:nth-child(2){
+    color: red;
+}
+.socialiconfooter a:last-child {
+        color: black;
+}
+@media (max-width: 750px){
+    .header {
+        /*flex-direction: column;*/
+        height: auto;
+    }
+    #toggler-btn{
+        display: block;
+    }
+    .header .menu{
+        display: none;
+    }
+    .menu.active{
+        display: flex;
+        background: rgb(252, 144, 4) ;
+        border-radius: 10px;
+        margin-bottom: 10px;
+        box-shadow: 0 5px 20px rgba(0,0,0,0.3);
+    }
+    .menu {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        margin-top: 10px;
+        padding: 5px;
+    }
+    .menu a{
+        display: block;
+        text-align: center;
+    }
+    .maincontainer,
+    .aboutcontainer,
+    .skillcontainer,
+    .contactmecontainer,
+    .myworkcontainer,
+    .footercontainer {
+        flex-direction: column;
+        max-width: 90%;
+        padding: 10px;
+    }
+
+    .main .maincontainer .content,
+    .main .maincontainer .mainimg,
+    .aboutme .aboutcontainer .aboutcontent,
+    .aboutme .aboutcontainer .aboutimg,
+    .skillimg,
+    .skillcontent,
+    .contactmecontainer .info,
+    .contactmecontainer .form,
+    .footercontainer .colum {
+        flex-basis: 100%;
+        text-align: center;
+    }
+
+    .main .maincontainer .mainimg img,
+    .aboutme .aboutcontainer .aboutimg img,
+    .skill .skillimg img {
+        border-radius: 10px;
+    }
+
+    .myworkcontainer {
+        gap: 20px;
+    }
+
+    .myworkcontainer .card {
+        flex-basis: 100%;
+    }
+
+    .form .formgp {
+        flex-direction: column;
+    }
+
+    .form .formgp input {
+        flex-basis: 100%;
+        padding: 10px ;
+    }
+
+    .footercontainer {
+        gap: 30px;
+        padding: 30px 10px;
+    }
+}
